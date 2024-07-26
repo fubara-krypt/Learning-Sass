@@ -1,6 +1,6 @@
 $light-color: #f4f4f4;
 $font-stack: Satoshi, General Sans;
-$primary-color: #0e6cff;
+ $primary-color: #0e6cff;
 $secondary-color: #ff8700;
 
 // Set text color based on bg //
@@ -26,19 +26,19 @@ $secondary-color: #ff8700;
 $spaceamounts: (1,2,3,4,5);
 
 @each $space in $spaceamounts {
-    .m-#{space} {
+    .m-#{$space} {
         margin: #{$space}rem;
     }
 
-    .my-#{space} {
-        margin: #{$space} 0;
+    .my-#{$space} {
+        margin: #{$space}rem 0;
     }
 
-    .p-#{space} {
+    .p-#{$space} {
         padding: #{$space}rem;
     }
 
-    .py-#{space} {
-        padding: #{$space} 0;
+    .py-#{$space} {
+        padding: #{$space}rem 0;
     }
 }
